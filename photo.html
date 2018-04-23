@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photos</title>
+<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+body{
+	background: cyan;
+	position:fixed;
+	margin: 0;
+	padding: 0;
+}
+
+header img{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	-webkit-animation: slide 8s infinite;
+}
+
+nav{
+	position: fixed;
+	background: cyan;
+	text-align:center;
+	width: 100%;
+	height: 50px;
+}
+
+nav img{
+	float: left;
+	max-width: 2.5%;
+	padding-top: 7.5px;
+	padding-left: 2%;
+	transition: all 1s;
+	background: cyan;
+}
+
+nav img:hover{
+	max-width: 15%;
+	padding: 2%;
+	border: 1px solid cyan;
+	border-radius: 0px 0px 25px 0px;
+}
+
+nav ul{
+	padding-left: 15%;
+	list-style:none;
+	width: 90%;
+}
+
+nav li{
+	font-size: 18px;
+	font-family: cuprum, arial, sans-serif;
+	margin-left: 8%;
+	float: left;
+	width: 8%;
+	margin-top: -5px;
+	padding: 0.25%;
+	transition: all 1s;
+}
+
+nav a{
+	text-decoration:none;
+}
+
+nav li:hover{
+	background: white;
+	border: 1px solid #579cf2;
+	border-radius: 10px;
+	padding: 0.5%;
+	margin-top: -10px;
+}
+
+#content{
+	border-radius: 25px;
+	padding: 1%;
+	margin-top: 5%;
+	margin-left:5%;
+	float: left;
+	position: fixed;
+	background: rgba(0,255,255,0.75);
+	width: 90%;
+	height: 80%;
+}
+
+#content p{
+	font-size: 25px;
+	padding: 1%;
+	overflow: hidden;
+}
+
+#content li{
+	padding-right: 1%;
+	margin-left: 6%;
+	overflow:hidden;
+	height:640px;
+	width:480px;
+	float: left;
+}
+
+#content img:hover{
+	content:url("tree-assets/tree_hover.jpg");
+}
+
+@-webkit-keyframes slide{
+	0% { content:url("forestPic.jpg");}
+	20% { content:url("forestPic.jpg");}
+	25% { content:url("beachPic.jpeg");}
+	45% { content:url("beachPic.jpeg");}
+	50% { content:url("mountainPic.jpg");}
+	70% { content:url("mountainPic.jpg");}
+	75% { content:url("desertPic.jpg");}
+	95% { content:url("desertPic.jpg");}
+	100% { content:url("forestPic.jpg");}
+}
+
+@media screen and (max-width: 1530px){
+	header img{
+		width:auto;
+	}
+	
+	#content p{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	#content{
+		margin-top: 12%;
+		padding-left: 0%;
+	}
+	
+	#content p{
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	nav li{
+		font-size: 0.9em;
+	}
+	
+	nav li{
+		width: 8%;
+		padding: 0.5%;
+	}
+	
+	nav li:hover{
+		border-radius: 0px;
+		padding: 1%;
+	}
+	
+	nav img{
+		max-width: 5%;
+	}
+	
+	nav img:hover{
+		max-width: 19%;
+	}
+	
+	#content p {
+		font-size: 8px;
+	}
+}
+</style>
+</head>
+<body>
+<header>
+	<img src="forestPic.jpg" alt=""/>
+</header>
+<div id="content">
+	<ul>
+		<li><img src="tree-assets/tree_regular.jpg" alt=""/></li>
+	</ul>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat ultrices finibus. Sed ut enim a metus ultricies tempus et quis diam. Donec facilisis tristique velit et placerat. Aenean iaculis rutrum metus eu pharetra. Nullam dapibus lorem vel elit scelerisque bibendum. Nam mauris mi, rutrum in vestibulum ac, dignissim eget velit. Fusce sit amet odio nisl. Mauris imperdiet, dolor at ullamcorper placerat, quam augue scelerisque tortor, molestie mollis purus sapien nec ipsum. Donec vitae lectus est.
+
+	Vestibulum tellus eros, facilisis id diam et, dapibus ornare ligula. Maecenas eu magna porttitor, tincidunt mauris vel, commodo sapien. Cras in ultricies lectus. Quisque vestibulum consequat aliquet. Etiam pharetra ligula et augue tristique, in placerat neque imperdiet. Mauris ut felis et ante convallis scelerisque a sit amet erat. Quisque eleifend turpis nec ligula malesuada, ac vulputate lacus cursus. Phasellus purus velit, dictum ut convallis eget, convallis eget dui. Nam a sagittis tellus. In ut sem semper, ultrices sem non, bibendum sem. Phasellus quis tortor ac neque pretium suscipit eget vel erat. Donec semper vel ipsum vitae pulvinar. Suspendisse vulputate felis eu feugiat tristique. Mauris aliquet porttitor varius.</p>
+</div>
+<nav>
+	<img src="logo-assets/logo.png">
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="Contact.html">Contact</a></li>
+		<li><a href="#">Locations</a></li>
+		<li><a href="#">Services</a></li>
+	</ul>
+</nav>
+</body>
+</html>
